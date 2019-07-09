@@ -50,7 +50,7 @@ int main(int argc, char** argv)
 	Mat image = imread(imgName);
 
 	//Image classification
-	DnnClassificator *classOfImage = new DnnClassificator(model_path, config_path, label_path, image.cols, image.rows, false);
+	DnnClassificator *classOfImage = new DnnClassificator(model_path, config_path, label_path, 300, 300, false);
 	Mat result = classOfImage->Classify(image);
 	cout << imgName << endl << model_path << endl << config_path << endl << label_path << endl;
 	//Show result

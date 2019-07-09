@@ -38,7 +38,7 @@ public:
 		pathtoLabels = newpathtoLabels;
 		width = newWidth;
 		height = newHeight;
-		mean = { 103.94,113.78,128 };
+		mean = {104, 117, 123};
 		SwapRB = newSwapRB;
 		net = readNet(pathtoModel, pathtoConfig);
 		net.setPreferableBackend(DNN_BACKEND_OPENCV);
